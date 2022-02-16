@@ -44,6 +44,42 @@ header nav ul li {
     font-size: 12px;
 }
 
+/* FOOTER */
+
+footer .socials {
+    background: rgb(0, 98, 189);
+    color: rgb(248, 248, 248);
+    font-size: 20px;
+    font-weight: 100;
+    height: 80px;
+    padding-left: 75%;
+}
+
+footer .socials h4 {
+    margin: 10px 0;
+    padding-top: 10px;
+    font-weight: 100;
+}
+
+footer .socials a {
+    font-size: 24px;
+    color: rgb(248, 248, 248);
+    margin: 0 3px;
+}
+
+footer .copyright {
+    background: rgb(0, 24, 68);
+    color: white;
+    height: 60px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*** HOME PAGE ***/
+
 /* HERO SECTION */
 
 .hero-search {
@@ -335,36 +371,46 @@ header nav ul li {
     border: 2px solid grey;
 }
 
-/* FOOTER */
+/*** JOB SEARCH PAGE ***/
 
-footer .socials {
-    background: rgb(0, 98, 189);
-    color: rgb(248, 248, 248);
-    font-size: 20px;
-    font-weight: 100;
-    height: 80px;
-    padding-left: 75%;
+/* HEADER EDITS */
+
+header .search-for-jobs input {
+    width: 40%;
+    height: 25px;
+    border-color: rgba(207, 207, 207, 0.795);
+    border-radius: 5px;
+    color:grey;
+    font-size: 13px;
+    padding: 5px;
+    margin-right: 10px;
+    margin-bottom: 20px;
 }
 
-footer .socials h4 {
-    margin: 10px 0;
-    padding-top: 10px;
-    font-weight: 100;
-}
-
-footer .socials a {
-    font-size: 24px;
-    color: rgb(248, 248, 248);
-    margin: 0 3px;
-}
-
-footer .copyright {
-    background: rgb(0, 24, 68);
+header .search-for-jobs button {
+    width: 15%;
+    height: 40px;
+    background-color: rgb(0, 98, 189);
     color: white;
-    height: 60px;
-    font-size: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 35px;
+    font-size: 13px;
+}
+
+/* ASIDE - REFINE SEARCH BOX */
+
+aside {
+    width: 20%;
+
+}
+
+/* HEADLINE AREA */
+
+/* MAP */
+
+/* JOB LISTINGS */
+
+button .job-alert {
+
 }
