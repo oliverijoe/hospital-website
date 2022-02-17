@@ -90,13 +90,18 @@ footer .copyright {
 }
 
 .hero-search .content-wrapper {
-    position: relative;
-    opacity: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 140px;
+}
+
+.hero-search .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-search h1 {
@@ -158,7 +163,7 @@ footer .copyright {
     justify-content: center;
     align-items: center;
     font-size: 2em;
-    background-image: url('/theme/category-image-1.jpg');
+    background: url('/theme/category-image-1.jpg');
     background-position: center;
 }
 
@@ -266,23 +271,27 @@ footer .copyright {
 .locations .city {
     position: relative;
     margin: 20px 0;
+    width: 60%;
 }
 
-.locations h4 {
+.locations .city h4 {
     color: black;
     font-size: 1.2em;
     font-weight: 100;
     margin-bottom: 10px;
 }
 
-.locations p {
+.locations .city p {
     color: grey;
-    font-size: 0.8em;
+    font-size: 0.9em;
     line-height: 20px;
 }
 
 .locations img {
-    width: 50%;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
 }
 
 .locations .description-left {
@@ -291,17 +300,17 @@ footer .copyright {
     left: 0;
     height: 100%;
     width: 50%;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255,255,255,0.8);
     padding: 0 20px;
 }
 
 .locations .description-right {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     height: 100%;
     width: 50%;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255,255,255,0.8);
     padding: 0 20px;
 }
 
@@ -401,12 +410,26 @@ header .search-for-jobs button {
 /* ASIDE - REFINE SEARCH BOX */
 
 .job-search {
-    width: 300px;
+    width: 450px;
     color: grey;
+    margin-right: 20px;
+}
+
+.job-search .title-search {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
 }
 
 .job-search h3 {
     font-size: 1.2em;
+    font-weight: 100;
+    margin-right: 5px;
+}
+
+.job-search h4 {
+    font-size: 1em;
+    margin: 10px 0;
     font-weight: 100;
 }
 
@@ -418,13 +441,78 @@ header .search-for-jobs button {
 .job-search hr {
     height: 2px;
     background: grey;
+    margin: 0;
+}
+
+.job-search .category {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(218, 218, 218);
+}
+
+.job-search .drop-down {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.job-search .drop-down-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    border-bottom: 1px solid rgb(218, 218, 218);
+}
+
+.job-search .drop-down h5 {
+    align-self: flex-start;
+    margin: 3px;
+    font-weight: 100;
+}
+
+.job-search .drop-down h6 {
+    margin: 5px;
+    font-size: 0.7em;
+    font-weight: 100;
+}
+
+.job-search .drop-down hr {
+    height: 1px;
+    background: rgb(218, 218, 218);
+}
+
+.job-search .join-box {
+    margin-top: 30px;
+    border: 1px solid grey;
+    padding: 15px 30px;
+    line-height: 25px;
+}
+
+.job-search .join-box button {
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background: rgb(0, 24, 68);
+    padding: 10px;
 }
 
 /* HEADLINE AREA */
 
+.job-search-content {
+    width: 100%;
+}
+
 .job-search-content h1 {
     color: grey;
     font-weight: 100;
+}
+
+.job-search-content .headline {
+    position: relative;
 }
 
 .job-search-content .headline img {
@@ -435,9 +523,40 @@ header .search-for-jobs button {
 
 .job-search-content .headline .description {
     position: absolute;
+    float: left;
+    right: 50%;
+    top: 0px;
+    background: rgba(255, 255, 255, 0.589);
+    height: 93%;
+    padding: 10px 30px;
 }
 
+.job-search-content .headline .description p {
+    line-height: 25px;
+}
 
 /* MAP */
 
+/* JOB ALERT BUTTON */
+
+.job-search-content .job-alert-button {
+    border: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    height: 60px;
+    margin-top: 30px;
+}
+
+.job-search-content .job-alert-button h4 {
+    margin-left: 10px;
+}
+
 /* JOB LISTINGS */
+
+.job-search-content .job-listings {
+
+}

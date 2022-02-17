@@ -35,15 +35,47 @@
         <main>
             <div class="content-wrapper">
                 <aside class="job-search">
-                    <h3>Refine Your Search</h3><h5>Clear All</h5>
+                    <div class="title-search">
+                        <h3>Refine Your Search</h3><h5>Clear All</h5>
+                    </div>
                     <hr>
                     <div class="categories">
                         <div class="category">
                             <h4>Department</h4><i class="fas fa-minus"></i>
-                            <ul class="drop-down">
-                                <h4>3 North Med/Surg</h4><p>41</p>
-                            </ul>
                         </div>
+                            <div class="drop-down">
+                                <div class="drop-down-item">
+                                    <h6>⚪ 3 North Med/Surg</h6><h6>41</h6> 
+                                </div>
+                                <div class="drop-down-item">
+                                    <h6>⚪ Home Health</h6><h6>14</h6> 
+                                </div>
+                                <div class="drop-down-item">
+                                    <h6>⚪ Arbours Homecare</h6><h6>13</h6> 
+                                </div>
+                                <div class="drop-down-item">
+                                    <h6>⚪ Cardiology Services</h6><h6>13</h6> 
+                                </div>
+                                <div class="drop-down-item">
+                                    <h6>⚪ Mattoon Clinic</h6><h6>10</h6> 
+                                </div>
+                                <div class="drop-down-item">
+                                    <h6>⚪ Cancer Program</h6><h6>9</h6> 
+                                </div>
+                                <div class="drop-down-item">
+                                    <h6>⚪ Med/Surg hs</h6><h6>9</h6> 
+                                </div>
+                                <div class="drop-down-item">
+                                    <h6>⚪ Emergency</h6><h6>8</h6> 
+                                </div>
+                                <div class="drop-down-item">
+                                    <h6>⚪ Share's Therapy Services</h6><h6>9</h6> 
+                                </div>
+                                <div class="drop-down-item">
+                                    <h6>⚪ Dietary</h6><h6>9</h6> 
+                                </div>
+                                <h5>+ Show more</h5>
+                            </div>
                         <div class="category">
                             <h4>City</h4><i class="fas fa-plus"></i>
                         </div>
@@ -63,6 +95,13 @@
                             <h4>Shift</h4><i class="fas fa-plus"></i>
                         </div>  
                     </div>
+                    <div class="join-box">
+                        <h4>
+                            Interested in working for Woburn Hospital?<br>
+                            Take the first step by joining our Talent Network today!<br>
+                        </h4>
+                        <button>Join our Talent Network</button>
+                    </div>
                 </aside>
                 <div class="job-search-content">
                     <h1>Job Search Results</h1>
@@ -81,9 +120,23 @@
                         </div>
                     </div>
                     <!--MAP GOES HERE-->
-                    <button class="job-alert">
-                        <i class="fa-solid fa-bell"></i><h4>Set up Job Alert</h4>
+                    <button class="job-alert-button">
+                        <i class="fas fa-bell"></i><h4>Set up Job Alert</h4>
                     </button>
+
+                    <div class="job-listings">
+                        <div class="sort">
+                            <h5>Sort by: </h5>
+                            <select id="sort-jobs" name="sort-jobs">
+                                <option value="Default">Default</option>
+                            </select>
+                        </div>
+                        <div class="job-listing">
+                            <div class="job-description">
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
