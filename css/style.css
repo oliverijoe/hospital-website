@@ -400,17 +400,44 @@ header .search-for-jobs button {
 
 /* ASIDE - REFINE SEARCH BOX */
 
-aside {
-    width: 20%;
+.job-search {
+    width: 300px;
+    color: grey;
+}
 
+.job-search h3 {
+    font-size: 1.2em;
+    font-weight: 100;
+}
+
+.job-search h5 {
+    font-size: 0.8em;
+    color: rgb(4, 163, 255);
+}
+
+.job-search hr {
+    height: 2px;
+    background: grey;
 }
 
 /* HEADLINE AREA */
 
+.job-search-content h1 {
+    color: grey;
+    font-weight: 100;
+}
+
+.job-search-content .headline img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.job-search-content .headline .description {
+    position: absolute;
+}
+
+
 /* MAP */
 
 /* JOB LISTINGS */
-
-button .job-alert {
-
-}
